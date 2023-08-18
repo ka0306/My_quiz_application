@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    android:padding="42dp"
+    tools:context=".MainActivity">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/Total_question"
+     android:text="total_Question"
+     android:layout_centerHorizontal="true"
+     android:textSize="20dp" />
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/question"
+     android:text="This Well Be The Question"
+     android:textColor="@color/white"
+     android:textSize="20dp"
+     android:layout_margin="20dp"
+     android:textStyle="bold"
+     android:layout_above="@id/choice_layout"
+     android:textAlignment="center"/>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+     android:orientation="vertical"
+     android:id="@+id/choice_layout">
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:backgroundTint="@color/white"
+      android:text="Ans A"
+      android:id="@+id/ans_a"
+      android:textColor="@color/black"
+      android:textSize="30dp"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:backgroundTint="@color/white"
+      android:text="Ans b"
+      android:id="@+id/ans_b"
+      android:textColor="@color/black"
+      android:textSize="30dp"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:backgroundTint="@color/white"
+      android:text="Ans c"
+      android:id="@+id/ans_c"
+      android:textColor="@color/black"
+      android:textSize="30dp"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:backgroundTint="@color/white"
+      android:text="Ans D"
+      android:id="@+id/ans_d"
+      android:textColor="@color/black"
+      android:textSize="30dp"/>
+
+ </LinearLayout>
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/choice_layout"
+     android:text="submit"
+     android:id="@+id/submit_btn"
+     android:layout_marginTop="40dp"/>
+
+
+
+
+</RelativeLayout>
